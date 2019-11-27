@@ -1,0 +1,57 @@
+html,
+body{
+   
+}
+
+.inr{
+    max-width: 960px;
+    margin:0 auto;
+}
+
+.page-header__inr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(211, 208, 208);
+}
+
+.page-header__info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.6em;
+}
+
+.page-header-info__text span{
+    display: block;
+}
+
+.main-visual{
+    position: relative;
+    height: 480px;
+    background: center center no-repeat;
+    background-image: url(https://haniwaman.com/wp-content/uploads/2018/10/lp-coding0-840x492.png);
+    background-size: cover;
+}
+.main-visual__ttl{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.first-section__header{
+    margin-bottom: 100px;
+}
+
+.section-header{
+    position: relative;
+    padding: 30px 0;
+    text-align: center;
+    background: grey;
+}
+.section-header__ttl{
+    color: #fff;
+    font-weight: normal;
+    font-style: 30px;
+}
