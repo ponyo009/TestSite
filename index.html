@@ -7,63 +7,95 @@
     <title>LandingPageTest</title>
     <!-- BootstrapのCSS読み込み -->
     <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/common.css">
     <!-- jQuery読み込み -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">Action 1</a>
-                        <a class="dropdown-item" href="#">Action 2</a>
+
+    <main style="font-family:Hiragino Mincho ProN,Hiragino Mincho Pro;">
+        <wrapper class="wrapper">
+
+            <section class="section1">
+                <div class="jumbotron jumbotron-fluid p-0 m-0">
+                    <img class="d-none d-md-block" src="/assets/image/visual.png" alt="" style="object-fit: cover; width: 100%; height: 100%;" >
+                </div>
+            </section>
+
+            <section class="section2" style="margin-top: 180px;">
+                <div class="section2-container container-fluid">
+                    <div class="row mb-3">
+                        <div class="col-12 text-center">
+                            <span style="font-size:40px;color:#6F6A6A;">開催概要</span>
+                        </div>
                     </div>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <a href="#" class="navbar-brand">BottomNavigationBar</a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapseBottomNav" aria-controls="collapseBottomNav" aria-expands="false" aria-label="ナビバーを開く">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapseBottomNav">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expand="false">Dropdown</a>
-                    <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">Dlink1</a>
-                        <a href="#" class="dropdown-item">Dlink2</a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">Dlink3</a>
+                    <div class="row">
+                        <div class="col-9 m-auto text-left">
+                            <span style="font-size:25px;color:#6F6A6A;">
+                                    リサーチコンプレックス推進事業における各種ICTプロジェクト等の紹介を通じて人工知能や深層学習等を含む最先端データサイエンスの動向を理解し、具体的な社会実装の手順を示しつつどのように地域や国全体のウェルビーイング向上に貢献できるのか、ヘルスケア領域の情報化の将来像について学びます。
+                            </span>
+                        </div>
                     </div>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0 row">
-                <input type="text" class="form-control mr-sm-2 col-sm-8 mx-3 mx-sm-0" placeholder="サイト内検索">
-                <button class="btn btn-outline-success btn-sm col-sm-3 w-25 ml-3 ml-md-0 mx-sm-0 mt-2 mt-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
+                    <div class="row"></div>
+                </div>
+            </section>
+
+            <section class="section3" style="margin-top: 180px;">
+                <div class="container-fluid program">
+                    <div class="row mb-3">
+                        <div class="col-12 program-header text-center">
+                            <span style="font-size:40px;color:#6F6A6A;">プログラム</span>
+                        </div>
+                    </div>
+                    <div class="row program-contents text-light d-flex flex-column flex-md-row">
+                        <div class="program-contents-content col-md-4 p-0 h-md-100 flex-grow-1" style="width:100%; background-image: url(/assets/image/visual.png); background-size: cover; background-position: center; background-attachment: fixed;">
+                            <div class="program-contents-content_wrapper h-100 d-flex flex-column justify-content-center" style="background-color: rgba(167,92,92,0.7);">
+                                <div class="program-content-textbox row mx-md-auto text-center">
+                                    <div class="program-content-textbox-date col-5 col-md-12 mb-md-3">
+                                        <div class="program-content-textbox-date_day">Day.1</div>
+                                        <div class="program-content-textbox-date_date">2020.02.05 (Tue)</div>
+                                    </div>
+                                    <div class="program-content-textbox-title col-7 col-md-12">
+                                        <div class="program-content-textbox-title_title">データで変えるまちづくり</div>
+                                        <div class="program-content-textbox-title_lead">〜スマートシティ鎌倉の取り組み〜</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program-contents-content col-md-4 p-0 h-md-100 flex-grow-1" style="width:100%; background-image: url(/assets/image/visual.png); background-size: cover; background-position: center; background-attachment: fixed;">
+                            <div class="program-contents-content_wrapper h-100 d-flex flex-column justify-content-center" style="background-color: rgba(97,181,129,0.7);">
+                                <div class="program-content-textbox row mx-md-auto text-center">
+                                    <div class="program-content-textbox-date col-5 col-md-12 mb-md-3">
+                                        <div class="program-content-textbox-date_day">Day.1</div>
+                                        <div class="program-content-textbox-date_date">2020.02.05 (Tue)</div>
+                                    </div>
+                                    <div class="program-content-textbox-title col-7 col-md-12">
+                                        <div class="program-content-textbox-title_title">データで変えるまちづくり</div>
+                                        <div class="program-content-textbox-title_lead">〜スマートシティ鎌倉の取り組み〜</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program-contents-content col-md-4 p-0 h-md-100 flex-grow-1" style="width:100%; background-image: url(/assets/image/visual.png); background-size: cover; background-position: center; background-attachment: fixed;">
+                            <div class="program-contents-content_wrapper h-100 d-flex flex-column justify-content-center" style="background-color: rgba(95,132,181,0.7);">
+                                <div class="program-content-textbox row mx-md-auto text-center">
+                                    <div class="program-content-textbox-date col-5 col-md-12 mb-md-3">
+                                        <div class="program-content-textbox-date_day">Day.1</div>
+                                        <div class="program-content-textbox-date_date">2020.02.05 (Tue)</div>
+                                    </div>
+                                    <div class="program-content-textbox-title col-7 col-md-12">
+                                        <div class="program-content-textbox-title_title">データで変えるまちづくり</div>
+                                        <div class="program-content-textbox-title_lead">〜スマートシティ鎌倉の取り組み〜</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </wrapper>
+    </main>
 </body>
 </html>
