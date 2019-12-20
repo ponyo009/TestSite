@@ -7,7 +7,8 @@
     <title>LandingPageTest</title>
     <!-- BootstrapのCSS読み込み -->
     <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/main.min.css">
+    <!-- 各ブロックのCSS読み込み -->
+    <link rel="stylesheet" href="/css/program/program.min.css">
     <!-- jQuery読み込み -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
@@ -42,56 +43,58 @@
                 </div>
             </section>
 
-            <section class="section3" style="margin-top: 180px;">
-                <div class="container-fluid program">
+            <section class="section3 program" style="margin-top: 180px;">
+                <div class="container-fluid"> 
                     <div class="row mb-3">
-                        <div class="col-12 program-header text-center">
+                        <div class="col-12 program__header text-center">
                             <span style="font-size:40px;color:#6F6A6A;">プログラム</span>
                         </div>
                     </div>
-                    <div class="row program-contents text-light d-flex flex-column flex-md-row">
-                        <div class="program-contents-content col-md-4 p-0 h-md-100 flex-grow-1" style="width:100%; background-image: url(/assets/image/visual.png); background-size: cover; background-position: center; background-attachment: fixed;">
-                            <div class="program-contents-content_wrapper h-100 d-flex flex-column justify-content-center" style="background-color: rgba(167,92,92,0.7);">
-                                <div class="program-contents-content-textbox row mx-md-auto text-center">
-                                    <div class="program-contents-content-textbox-date col-5 col-md-12 mb-md-3">
-                                        <div class="program-contents-content-textbox-date_day">Day.1</div>
-                                        <div class="program-contents-content-textbox-date_date">2020.02.05 (Tue)</div>
+
+                    <div class="row program__contents text-light d-flex flex-column flex-md-row">
+                        <div class="program__contents__content col-md-4 p-0 h-md-100 flex-grow-1" style="width:100%;background-image: url(/assets/image/visual.png);background-size:cover;background-position:center;background-attachment:fixed;">
+                            <div class="program__contents__content--wrapper h-100 d-flex flex-column justify-content-center" style="background-color:rgba(167,92,92,0.7);">
+                                <div class="program__contents__content__textbox row mx-md-auto text-center">
+                                    <div class="program__contents__content__textbox__date col-5 col-md-12 mb-md-3">
+                                        <div class="program__contents__content__textbox__date--day">Day.1</div>
+                                        <div class="program__contents__content__textbox__date--date">2020.02.05 (Tue)</div>
                                     </div>
-                                    <div class="program-contents-content-textbox-title col-7 col-md-12">
-                                        <div class="program-contents-content-textbox-title_title">データで変えるまちづくり</div>
-                                        <div class="program-contents-content-textbox-title_lead">〜スマートシティ鎌倉の取り組み〜</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="program-contents-content col-md-4 p-0 h-md-100 flex-grow-1" style="width:100%; background-image: url(/assets/image/visual.png); background-size: cover; background-position: center; background-attachment: fixed;">
-                            <div class="program-contents-content_wrapper h-100 d-flex flex-column justify-content-center" style="background-color: rgba(97,181,129,0.7);">
-                                <div class="program-contents-content-textbox row mx-md-auto text-center">
-                                    <div class="program-contents-content-textbox-date col-5 col-md-12 mb-md-3">
-                                        <div class="program-contents-content-textbox-date_day">Day.1</div>
-                                        <div class="program-contents-content-textbox-date_date">2020.02.05 (Tue)</div>
-                                    </div>
-                                    <div class="program-contents-content-textbox-title col-7 col-md-12">
-                                        <div class="program-contents-content-textbox-title_title">データで変えるまちづくり</div>
-                                        <div class="program-contents-content-textbox-title_lead">〜スマートシティ鎌倉の取り組み〜</div>
+                                    <div class="program__contents__content__textbox__title col-7 col-md-12">
+                                        <div class="program__contents__content__textbox__title--title">データで変えるまちづくり</div>
+                                        <div class="program__contents__content__textbox__title--lead">〜スマートシティ鎌倉の取り組み〜</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="program-contents-content col-md-4 p-0 h-md-100 flex-grow-1" style="width:100%; background-image: url(/assets/image/visual.png); background-size: cover; background-position: center; background-attachment: fixed;">
-                            <div class="program-contents-content_wrapper h-100 d-flex flex-column justify-content-center" style="background-color: rgba(95,132,181,0.7);">
-                                <div class="program-contents-content-textbox row mx-md-auto text-center">
-                                    <div class="program-contents-content-textbox-date col-5 col-md-12 mb-md-3">
-                                        <div class="program-contents-content-textbox-date_day">Day.1</div>
-                                        <div class="program-contents-content-textbox-date_date">2020.02.05 (Tue)</div>
+                        <div class="program__contents__content col-md-4 p-0 h-md-100 flex-grow-1" style="width:100%;background-image: url(/assets/image/visual.png);background-size:cover;background-position:center;background-attachment:fixed;">
+                            <div class="program__contents__content--wrapper h-100 d-flex flex-column justify-content-center" style="background-color:rgba(97,181,129,0.7);">
+                                <div class="program__contents__content__textbox row mx-md-auto text-center">
+                                    <div class="program__contents__content__textbox__date col-5 col-md-12 mb-md-3">
+                                        <div class="program__contents__content__textbox__date--day">Day.1</div>
+                                        <div class="program__contents__content__textbox__date--date">2020.02.05 (Tue)</div>
                                     </div>
-                                    <div class="program-contents-content-textbox-title col-7 col-md-12">
-                                        <div class="program-contents-content-textbox-title_title">データで変えるまちづくり</div>
-                                        <div class="program-contents-content-textbox-title_lead">〜スマートシティ鎌倉の取り組み〜</div>
+                                    <div class="program__contents__content__textbox__title col-7 col-md-12">
+                                        <div class="program__contents__content__textbox__title--title">データで変えるまちづくり</div>
+                                        <div class="program__contents__content__textbox__title--lead">〜スマートシティ鎌倉の取り組み〜</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="program__contents__content col-md-4 p-0 h-md-100 flex-grow-1" style="width:100%;background-image: url(/assets/image/visual.png);background-size:cover;background-position:center;background-attachment:fixed;">
+                            <div class="program__contents__content--wrapper h-100 d-flex flex-column justify-content-center" style="background-color:rgba(95,132,181,0.7);">
+                                <div class="program__contents__content__textbox row mx-md-auto text-center">
+                                    <div class="program__contents__content__textbox__date col-5 col-md-12 mb-md-3">
+                                        <div class="program__contents__content__textbox__date--day">Day.1</div>
+                                        <div class="program__contents__content__textbox__date--date">2020.02.05 (Tue)</div>
+                                    </div>
+                                    <div class="program__contents__content__textbox__title col-7 col-md-12">
+                                        <div class="program__contents__content__textbox__title--title">データで変えるまちづくり</div>
+                                        <div class="program__contents__content__textbox__title--lead">〜スマートシティ鎌倉の取り組み〜</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
                     </div>
                 </div>
             </section>

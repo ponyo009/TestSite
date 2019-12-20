@@ -1,0 +1,21 @@
+.program__contents {
+  height: 600px;
+}
+
+.program__contents__content__textbox__date--day {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.program__contents__content__textbox__date--date {
+  font-size: 1rem;
+}
+
+.program__contents__content__textbox__title--title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.program__contents__content__textbox__title--lead {
+  font-weight: lighter;
+}
