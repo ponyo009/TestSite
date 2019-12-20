@@ -7,8 +7,11 @@
     <title>LandingPageTest</title>
     <!-- BootstrapのCSS読み込み -->
     <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 汎用CSS読み込み -->
+    <link rel="stylesheet" href="/css/main/main.min.css">
     <!-- 各ブロックのCSS読み込み -->
     <link rel="stylesheet" href="/css/program/program.min.css">
+    <link rel="stylesheet" href="/css/description/description.min.css">
     <!-- jQuery読み込み -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
@@ -16,7 +19,7 @@
 </head>
 <body>
 
-    <main style="font-family:Hiragino Mincho ProN,Hiragino Mincho Pro;">
+    <main>
         <wrapper class="wrapper">
 
             <section class="section1">
@@ -26,35 +29,34 @@
             </section>
 
             <section class="section2" style="margin-top: 180px;">
-                <div class="section2-container container-fluid">
-                    <div class="row mb-3">
+                <div class="description container-fluid">
+                    <div class="row description__header mb-3">
                         <div class="col-12 text-center">
-                            <span style="font-size:40px;color:#6F6A6A;">開催概要</span>
+                            開催概要
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row description__main">
                         <div class="col-9 m-auto text-left">
-                            <span style="font-size:25px;color:#6F6A6A;">
-                                    リサーチコンプレックス推進事業における各種ICTプロジェクト等の紹介を通じて人工知能や深層学習等を含む最先端データサイエンスの動向を理解し、具体的な社会実装の手順を示しつつどのように地域や国全体のウェルビーイング向上に貢献できるのか、ヘルスケア領域の情報化の将来像について学びます。
-                            </span>
+                            リサーチコンプレックス推進事業における各種ICTプロジェクト等の紹介を通じて人工知能や深層学習等を含む最先端データサイエンスの動向を理解し、具体的な社会実装の手順を示しつつどのように地域や国全体のウェルビーイング向上に貢献できるのか、ヘルスケア領域の情報化の将来像について学びます。
                         </div>
                     </div>
                     <div class="row"></div>
                 </div>
             </section>
 
-            <section class="section3 program" style="margin-top: 180px;">
-                <div class="container-fluid"> 
-                    <div class="row mb-3">
-                        <div class="col-12 program__header text-center">
-                            <span style="font-size:40px;color:#6F6A6A;">プログラム</span>
+            <section class="section3" style="margin-top: 180px;">
+                <div class="program container-fluid"> 
+                    
+                    <div class="row program__header mb-3">
+                        <div class="col-12 text-center">
+                            プログラム
                         </div>
                     </div>
 
                     <div class="row program__contents text-light d-flex flex-column flex-md-row">
-                        <div class="program__contents__content col-md-4 p-0 h-md-100 flex-grow-1" style="width:100%;background-image: url(/assets/image/visual.png);background-size:cover;background-position:center;background-attachment:fixed;">
+                        <div class="program__contents__content col-md-4 p-0 h-md-100 flex-grow-1" style="background-image: url(/assets/image/visual.png);">
                             <div class="program__contents__content--wrapper h-100 d-flex flex-column justify-content-center" style="background-color:rgba(167,92,92,0.7);">
-                                <div class="program__contents__content__textbox row mx-md-auto text-center">
+                                <div class="program__contents__content__textbox row mx-md-auto text-center d-flex align-items-center">
                                     <div class="program__contents__content__textbox__date col-5 col-md-12 mb-md-3">
                                         <div class="program__contents__content__textbox__date--day">Day.1</div>
                                         <div class="program__contents__content__textbox__date--date">2020.02.05 (Tue)</div>
@@ -66,7 +68,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="program__contents__content col-md-4 p-0 h-md-100 flex-grow-1" style="width:100%;background-image: url(/assets/image/visual.png);background-size:cover;background-position:center;background-attachment:fixed;">
+                        <div class="program__contents__content col-md-4 p-0 h-md-100 flex-grow-1" style="background-image: url(/assets/image/visual.png);">
                             <div class="program__contents__content--wrapper h-100 d-flex flex-column justify-content-center" style="background-color:rgba(97,181,129,0.7);">
                                 <div class="program__contents__content__textbox row mx-md-auto text-center">
                                     <div class="program__contents__content__textbox__date col-5 col-md-12 mb-md-3">
@@ -80,7 +82,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="program__contents__content col-md-4 p-0 h-md-100 flex-grow-1" style="width:100%;background-image: url(/assets/image/visual.png);background-size:cover;background-position:center;background-attachment:fixed;">
+                        <div class="program__contents__content col-md-4 p-0 h-md-100 flex-grow-1" style="background-image: url(/assets/image/visual.png);">
                             <div class="program__contents__content--wrapper h-100 d-flex flex-column justify-content-center" style="background-color:rgba(95,132,181,0.7);">
                                 <div class="program__contents__content__textbox row mx-md-auto text-center">
                                     <div class="program__contents__content__textbox__date col-5 col-md-12 mb-md-3">
@@ -94,8 +96,8 @@
                                 </div>
                             </div>
                         </div>
-                    
                     </div>
+
                 </div>
             </section>
         </wrapper>

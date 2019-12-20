@@ -1,15 +1,24 @@
 .program{
+    &__header{
+        font-size:40px;
+        font-weight: bold;
+        color:#6F6A6A;
+    }
     &__contents{
         height: 600px;
         &__content{
+            width:100%;
+            background-size:cover;
+            background-position:center;
+            background-attachment:fixed;
             &__textbox{
                 &__date{
                     &--day{
-                        font-size: 2.5rem;
+                        font-size: 5vw;
                         font-weight: bold;
                     }
                     &--date{
-                        font-size: 1rem;
+                        font-size: 3vw;
                     }
                 }
 

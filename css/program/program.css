@@ -1,14 +1,27 @@
+.program__header {
+  font-size: 40px;
+  font-weight: bold;
+  color: #6F6A6A;
+}
+
 .program__contents {
   height: 600px;
 }
 
+.program__contents__content {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .program__contents__content__textbox__date--day {
-  font-size: 2.5rem;
+  font-size: 5vw;
   font-weight: bold;
 }
 
 .program__contents__content__textbox__date--date {
-  font-size: 1rem;
+  font-size: 3vw;
 }
 
 .program__contents__content__textbox__title--title {
