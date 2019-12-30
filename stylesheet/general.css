@@ -1,9 +1,9 @@
 .html {
   margin: 0;
   padding: 0;
-  font-size: 14px;
-  color: #0a0a0a;
-  font-family: yugo-B;
+  font-size: 14px !important;
+  color: #0a0a0a !important;
+  font-family: yugo-B !important;
 }
 
 .html .body {
@@ -12,7 +12,7 @@
 }
 
 a {
-  color: inherit !important;
+  color: inherit;
 }
 
 .wrapper {
@@ -43,6 +43,7 @@ a {
   height: 64px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__logo {
