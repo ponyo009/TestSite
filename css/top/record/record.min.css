@@ -1,0 +1,1 @@
+.record{display:grid;width:50vw;height:100vh;grid-template-columns:repeat(16, 1fr);grid-template-rows:repeat(9, 1fr)}.record__main{background-color:green;grid-column:3/11;grid-row:3/11;display:flex;justify-content:center;align-items:center}.record .album{width:80%;height:80%;display:flex;justify-content:center}

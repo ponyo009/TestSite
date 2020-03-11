@@ -1,0 +1,39 @@
+.grid {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+
+    &-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: white;
+        -webkit-text-stroke:0.5px #000;
+
+       &--1 {
+        background-color: orange;
+        grid-column: 1/5;
+       }
+       &--2 {
+        background-color: black;
+        grid-column: 2/4;
+       }
+       &--3 {
+        background-color: blue;
+        grid-column: 1/5;
+       }
+       &--4 {
+        background-color: red;
+        
+       }
+       &--5 {
+        background-color: green;
+       }
+       &--6 {
+        background-color: yellow;
+       }
+    }
+}
