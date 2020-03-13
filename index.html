@@ -4,30 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eiji1</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
     <link rel="stylesheet" href="/css/common.css">
-    <link rel="stylesheet" href="/css/grid/grid.min.css">
     <link rel="stylesheet" href="/css/top/top.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+    <!-- CSS -->
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1/slick/slick.min.js"></script>
+    <!-- Jquery -->
 </head>
 <body>
-    <div class="grid">
-        <div class="grid-item grid-item--1"><p>1</p></div>
-        <div class="grid-item grid-item--2"><p>2</p></div>
-        <div class="grid-item grid-item--3"><p>3</p></div>
-        <div class="grid-item grid-item--4"><p>4</p></div>
-        <div class="grid-item grid-item--5"><p>5</p></div>
-        <div class="grid-item grid-item--6"><p>6</p></div>
-    </div>
     <div class="container">
-        <div class="record">
-            <h5 class="record__heading">ファーストアルバム「なる。」発売中</h5>
-            <div class="record__main">
-                <div class="album">
-                    <h1 class="album__title">なる。</h1>
+        <div class="works">
+            <div class="slick-slider">
+                <div class="slick-slider__item">
+                    <div class="work">
+                        <h5 class="work__heading">見出し1</h5>
+                        <div class="work__main">
+                            <img src="https://via.placeholder.com/500" alt="">
+                        </div>
+                        <div class="work__mediacontroller">コントローラ</div>
+                    </div>
+                </div>
+                <div class="slick-slider__item">
+                    <div class="work">
+                        <h5 class="work__heading">見出し2</h5>
+                        <div class="work__main">
+                            <img src="https://via.placeholder.com/500" alt="">
+                        </div>
+                        <div class="work__mediacontroller">コントローラ</div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="info"></div>
     </div>
 </body>
+
+<!-- slick -->
+<script>
+    $('.slick-slider').slick({
+    autoplay:true,
+    autoplaySpeed:5000,
+    infinite:true,
+    vertical:true,
+});
+</script>
+<!-- slick end -->
+
 </html>

@@ -6,35 +6,26 @@
   grid-template-rows: repeat(9, 1fr);
 }
 
-.record {
+.works {
   grid-column: 2/8;
   grid-row: 2/8;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  min-width: 0;
+  min-height: 0;
 }
 
-.record__heading {
-  font-size: 1.6vmin;
+.work {
   display: flex;
-  margin: 0;
-  width: 80%;
-}
-
-.record__main:before {
-  content: '';
-  display: block;
-  padding-top: 100%;
-}
-
-.record__main {
-  background-color: gray;
-  width: 80%;
-  height: auto;
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.work__main {
+  display: flex;
 }
 
 .info {
