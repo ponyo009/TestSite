@@ -6,15 +6,26 @@
     <title>eiji1</title>
     <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
-    <link rel="stylesheet" href="https://ponyo009.github.io/testsite/css/common.css">
-    <link rel="stylesheet" href="https://ponyo009.github.io/testsite/css/top/top.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
-    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="https://ponyo009.github.io/testsite/css/top/top.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://ponyo009.github.io/testsite/css/common.css"> -->
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/top/top.css">
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1/slick/slick.min.js"></script>
-    <!-- Jquery -->
+    <!-- Font -->
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'hml6sbg',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
 </head>
 <body>
     <div class="container">
@@ -47,10 +58,11 @@
 <!-- slick -->
 <script>
     $('.slick-slider').slick({
-    autoplay:true,
+    autoplay:false,
     autoplaySpeed:5000,
     infinite:true,
     vertical:true,
+    dots:true,
 });
 </script>
 <!-- slick end -->
